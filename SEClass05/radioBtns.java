@@ -9,7 +9,7 @@ public class radioBtns {
 
     public static void main (String[] args) {
 
-        System.setProperty("webdriver.chrome.driver","Driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","Drivers/chromedriver.exe");
         WebDriver driver= new ChromeDriver();
         driver.get("http://syntaxprojects.com/basic-radiobutton-demo.php");
 
@@ -19,11 +19,11 @@ public class radioBtns {
 //        femaleRadioBtn.click();
 
 //        check if the radio btn is displayed
-        boolean isDisplayed = femaleRadioBtn.isDisplayed();
+        boolean isDisplayed=femaleRadioBtn.isDisplayed();
         System.out.println("The female radio Btn is displayed on the webPage   :" +isDisplayed);
 
 //        check if the radio btn is enabled
-        boolean isEnabled = femaleRadioBtn.isEnabled();
+        boolean isEnabled=femaleRadioBtn.isEnabled();
         System.out.println("The female   radio Btn is Enabled on the webPage  :" +isEnabled);
 
 //        check if the female radio btn is Selected
@@ -32,7 +32,7 @@ public class radioBtns {
 
 
 //         Select the female radio btn only if its Enabled
-        if(isEnabled){
+        if(isEnabled)   {
             femaleRadioBtn.click();
         }
 

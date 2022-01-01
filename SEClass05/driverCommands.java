@@ -11,7 +11,7 @@ public class driverCommands {
 
     public static void main (String[] args) {
 
-        System.setProperty("webdriver.chrome.driver", "Driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
@@ -22,7 +22,7 @@ public class driverCommands {
 //       get all the links that are there on ebay.com
 //        as we have multiple elements with tag name 'a' so we use driver.findElements
 //        as there are multiple elements so we need to store it in list of WebElements
-        List<WebElement> links = driver.findElements(By.tagName("a"));
+        List<WebElement> links=driver.findElements(By.tagName("a"));
 
 //        print the size of list
         System.out.println("The size of list containing links is : "+links.size());
@@ -40,7 +40,7 @@ public class driverCommands {
 //             use the method .getAtrribute to have the value of a particular attribute in the tag
 
 //               <a href"htpps://link.com">linktext<a>
-                String linkAddress = link.getAttribute("href");
+                String linkAddress=link.getAttribute("href");
 //               print the attribute "href" value
                 System.out.println(linkAddress);
 
@@ -51,4 +51,3 @@ public class driverCommands {
 
     }
 }
-//Break till 8:48
